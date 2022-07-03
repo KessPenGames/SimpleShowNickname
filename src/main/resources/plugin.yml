@@ -1,0 +1,6 @@
+name: SimpleShowNickname
+version: '${project.version}'
+main: net.simple.show.nickname.SimpleShowNickname
+api-version: 1.18
+authors: [ No_KessPen ]
+description: Показывает никнейм
