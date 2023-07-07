@@ -11,7 +11,10 @@ public class RightClickAtPlayerListener implements Listener {
     @EventHandler
     public void onRightClick(PlayerInteractAtEntityEvent event) {
         if (event.getRightClicked() instanceof Player player) {
-            event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("\u00a76«" + player.getName() + "»"));
+            event.getPlayer().spigot()
+                    .sendMessage(
+                            ChatMessageType.ACTION_BAR, new TextComponent("§6«§f" + player.getName() + "§6»")
+                    );
         }
     }
 }
